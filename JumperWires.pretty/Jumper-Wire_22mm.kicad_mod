@@ -1,0 +1,99 @@
+(footprint "Jumper-Wire_22mm"
+	(version 20241229)
+	(generator "kicad-jumperwires")
+	(generator_version "1.0")
+	(layer "F.Cu")
+	(descr "Wire jumper (wire bridge) for single-sided boards, 22mm hole pitch, bare wire such as a resistor lead")
+	(tags "jumper wire bridge link net tie single sided")
+	(property "Reference" "REF**"
+		(at 11 -1.85 0)
+		(layer "F.SilkS")
+		(uuid "b8044874-aa16-5cdd-87be-918d9cc27c4c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Jumper-Wire_22mm"
+		(at 11 1.85 0)
+		(layer "F.Fab")
+		(uuid "adee83cb-6f90-5dc8-b6f6-9ce5e42cdfd7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(jumper_pad_groups ("1" "2"))
+	(fp_line
+		(start 1.1 0)
+		(end 20.9 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f0c8b66c-b038-57c9-8d4a-c038277e09b5")
+	)
+	(fp_line
+		(start 0 0)
+		(end 22 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2a735974-05f7-55d8-80b6-d0de54458bbb")
+	)
+	(fp_rect
+		(start -1.05 -1.05)
+		(end 23.05 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "fa930ede-e7ae-56aa-9a25-e95104cfa7c9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 11 -0.8 0)
+		(layer "F.Fab")
+		(uuid "3bed4401-abc7-5d13-8218-d1865df112a1")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(uuid "5ee910d1-b7f7-5d33-b6e3-188f5ead332e")
+	)
+	(pad "2" thru_hole circle
+		(at 22 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(uuid "a8547a1b-6ee2-53d9-b528-230837671db8")
+	)
+	(model "Jumper-Wire_22mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

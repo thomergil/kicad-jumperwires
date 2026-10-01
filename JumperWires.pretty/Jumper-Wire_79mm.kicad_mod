@@ -1,0 +1,99 @@
+(footprint "Jumper-Wire_79mm"
+	(version 20241229)
+	(generator "kicad-jumperwires")
+	(generator_version "1.0")
+	(layer "F.Cu")
+	(descr "Wire jumper (wire bridge) for single-sided boards, 79mm hole pitch, bare wire such as a resistor lead")
+	(tags "jumper wire bridge link net tie single sided")
+	(property "Reference" "REF**"
+		(at 39.5 -1.85 0)
+		(layer "F.SilkS")
+		(uuid "0823c9b6-fd26-599a-93f5-c0358d7f3b65")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Jumper-Wire_79mm"
+		(at 39.5 1.85 0)
+		(layer "F.Fab")
+		(uuid "f2435f2e-1dc5-5126-8df8-21fdce5b6e32")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(jumper_pad_groups ("1" "2"))
+	(fp_line
+		(start 1.1 0)
+		(end 77.9 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "669774fa-3049-54f8-ab71-12f0d78ec82f")
+	)
+	(fp_line
+		(start 0 0)
+		(end 79 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0fd3d74e-887b-5a1f-a758-f8393544b09f")
+	)
+	(fp_rect
+		(start -1.05 -1.05)
+		(end 80.05 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ada226ca-b68d-5020-ae88-1b8aa81069cd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 39.5 -0.8 0)
+		(layer "F.Fab")
+		(uuid "03da6d2f-9a6d-5b2f-8541-8e6ac3323373")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(uuid "36297f14-60d6-56ed-a62c-6104a5693802")
+	)
+	(pad "2" thru_hole circle
+		(at 79 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(uuid "e0e8c3cf-ec61-5685-b14f-0dc348879ff1")
+	)
+	(model "Jumper-Wire_79mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
